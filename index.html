@@ -1,15 +1,69 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Jenkins Docker Project</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jenkins Docker CI/CD</title>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-    <h1>Jenkins Deployment Successful!</h1>
+    <div class="container">
+        <div class="card">
 
-    <p>This website was deployed using Jenkins and Docker.</p>
+            <h1>🚀 Jenkins + Docker + AWS</h1>
 
-    <p>GitHub → Jenkins → Docker → AWS EC2</p>
+            <p class="subtitle">
+                CI/CD Pipeline Successfully Deployed
+            </p>
 
+            <div class="status">
+                <span class="dot"></span>
+                Application is Running
+            </div>
+
+            <div class="pipeline">
+                <div class="step">
+                    <div class="icon">🐙</div>
+                    <h3>GitHub</h3>
+                    <p>Source Code</p>
+                </div>
+
+                <div class="arrow">→</div>
+
+                <div class="step">
+                    <div class="icon">🔨</div>
+                    <h3>Jenkins</h3>
+                    <p>Build & CI/CD</p>
+                </div>
+
+                <div class="arrow">→</div>
+
+                <div class="step">
+                    <div class="icon">🐳</div>
+                    <h3>Docker</h3>
+                    <p>Container</p>
+                </div>
+
+                <div class="arrow">→</div>
+
+                <div class="step">
+                    <div class="icon">☁️</div>
+                    <h3>AWS EC2</h3>
+                    <p>Deployment</p>
+                </div>
+            </div>
+
+            <button onclick="showMessage()">
+                Test Deployment
+            </button>
+
+            <p id="message"></p>
+
+        </div>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>

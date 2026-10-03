@@ -3,67 +3,773 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jenkins Docker CI/CD</title>
+
+    <meta name="description"
+          content="Vijayalakshmi - Cloud and DevOps Engineer portfolio showcasing AWS, Jenkins, Docker, GitHub and CI/CD projects.">
+
+    <title>Vijayalakshmi | Cloud & DevOps Engineer</title>
+
     <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
 </head>
 
 <body>
 
-    <div class="container">
-        <div class="card">
+    <!-- ================= NAVBAR ================= -->
 
-            <h1>🚀 Jenkins + Docker + AWS</h1>
+    <header class="navbar">
+        <div class="container nav-container">
 
-            <p class="subtitle">
-                CI/CD Pipeline Successfully Deployed
-            </p>
+            <a href="#home" class="logo">
+                <span class="logo-bracket">&lt;</span>
+                VL
+                <span class="logo-bracket">/&gt;</span>
+            </a>
 
-            <div class="status">
-                <span class="dot"></span>
-                Application is Running
-            </div>
-
-            <div class="pipeline">
-                <div class="step">
-                    <div class="icon">🐙</div>
-                    <h3>GitHub</h3>
-                    <p>Source Code</p>
-                </div>
-
-                <div class="arrow">→</div>
-
-                <div class="step">
-                    <div class="icon">🔨</div>
-                    <h3>Jenkins</h3>
-                    <p>Build & CI/CD</p>
-                </div>
-
-                <div class="arrow">→</div>
-
-                <div class="step">
-                    <div class="icon">🐳</div>
-                    <h3>Docker</h3>
-                    <p>Container</p>
-                </div>
-
-                <div class="arrow">→</div>
-
-                <div class="step">
-                    <div class="icon">☁️</div>
-                    <h3>AWS EC2</h3>
-                    <p>Deployment</p>
-                </div>
-            </div>
-
-            <button onclick="showMessage()">
-                Test Deployment
+            <button class="menu-toggle" id="menuToggle" aria-label="Open navigation">
+                ☰
             </button>
 
-            <p id="message"></p>
+            <nav id="navMenu">
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#project">Project</a>
+                <a href="#architecture">Architecture</a>
+                <a href="#contact">Contact</a>
+            </nav>
 
         </div>
-    </div>
+    </header>
+
+
+    <!-- ================= HERO ================= -->
+
+    <main>
+
+        <section id="home" class="hero">
+
+            <div class="container hero-grid">
+
+                <div class="hero-content">
+
+                    <div class="availability">
+                        <span class="status-dot"></span>
+                        Open to Cloud & DevOps Opportunities
+                    </div>
+
+                    <p class="eyebrow">CLOUD & DEVOPS ENGINEER</p>
+
+                    <h1>
+                        Building and automating
+                        <span>cloud deployments.</span>
+                    </h1>
+
+                    <p class="hero-description">
+                        I am Vijayalakshmi, a Computer Science Engineering graduate
+                        focused on AWS, DevOps, cloud infrastructure, automation
+                        and CI/CD deployment.
+                    </p>
+
+                    <div class="hero-buttons">
+                        <a href="#project" class="btn btn-primary">
+                            View My Project
+                            <span>→</span>
+                        </a>
+
+                        <a href="https://github.com/vijayalakshmi2802"
+                           target="_blank"
+                           rel="noopener noreferrer"
+                           class="btn btn-secondary">
+                            GitHub
+                        </a>
+                    </div>
+
+                    <div class="hero-tech">
+                        <span>AWS</span>
+                        <span>Jenkins</span>
+                        <span>Docker</span>
+                        <span>GitHub</span>
+                        <span>Linux</span>
+                    </div>
+
+                </div>
+
+
+                <!-- Terminal -->
+
+                <div class="terminal-card">
+
+                    <div class="terminal-header">
+                        <div class="terminal-dots">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                        </div>
+
+                        <span>deployment.sh</span>
+                    </div>
+
+                    <div class="terminal-body">
+
+                        <p>
+                            <span class="terminal-green">$</span>
+                            git push origin main
+                        </p>
+
+                        <p class="terminal-muted">
+                            → GitHub repository updated
+                        </p>
+
+                        <p>
+                            <span class="terminal-green">$</span>
+                            webhook → Jenkins
+                        </p>
+
+                        <p class="terminal-muted">
+                            → Pipeline triggered
+                        </p>
+
+                        <p>
+                            <span class="terminal-green">$</span>
+                            docker build
+                        </p>
+
+                        <p class="terminal-muted">
+                            → Image created successfully
+                        </p>
+
+                        <p>
+                            <span class="terminal-green">$</span>
+                            docker run
+                        </p>
+
+                        <p class="terminal-muted">
+                            → Container deployed
+                        </p>
+
+                        <p class="terminal-success">
+                            ✓ Deployment Successful
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= ABOUT ================= -->
+
+        <section id="about" class="section">
+
+            <div class="container">
+
+                <div class="section-heading">
+                    <p class="section-label">01 — ABOUT</p>
+                    <h2>Cloud & DevOps focused</h2>
+                </div>
+
+                <div class="about-grid">
+
+                    <div class="about-text">
+
+                        <p>
+                            I am a 2025 Computer Science Engineering graduate
+                            building my career in Cloud and DevOps engineering.
+                        </p>
+
+                        <p>
+                            My focus is on AWS cloud infrastructure, Linux,
+                            Git/GitHub, Docker, Jenkins and automated deployment.
+                            I prefer learning technologies by implementing
+                            real projects and deployment workflows.
+                        </p>
+
+                        <p>
+                            This portfolio demonstrates one of my practical
+                            CI/CD projects where a GitHub push automatically
+                            triggers Jenkins and deploys a Dockerized web
+                            application to AWS EC2.
+                        </p>
+
+                    </div>
+
+                    <div class="about-stats">
+
+                        <div class="stat-card">
+                            <strong>AWS</strong>
+                            <span>Cloud Platform</span>
+                        </div>
+
+                        <div class="stat-card">
+                            <strong>CI/CD</strong>
+                            <span>Automated Deployment</span>
+                        </div>
+
+                        <div class="stat-card">
+                            <strong>Docker</strong>
+                            <span>Containerization</span>
+                        </div>
+
+                        <div class="stat-card">
+                            <strong>Jenkins</strong>
+                            <span>Pipeline Automation</span>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= SKILLS ================= -->
+
+        <section id="skills" class="section section-dark">
+
+            <div class="container">
+
+                <div class="section-heading">
+                    <p class="section-label">02 — TECHNOLOGIES</p>
+                    <h2>My technical stack</h2>
+                </div>
+
+
+                <div class="skills-grid">
+
+                    <div class="skill-card">
+                        <div class="skill-icon">☁</div>
+                        <h3>Cloud</h3>
+                        <p>AWS</p>
+                        <div class="skill-tags">
+                            <span>EC2</span>
+                            <span>VPC</span>
+                            <span>Security Groups</span>
+                            <span>Elastic IP</span>
+                        </div>
+                    </div>
+
+
+                    <div class="skill-card">
+                        <div class="skill-icon">⚙</div>
+                        <h3>DevOps</h3>
+                        <p>CI/CD & Automation</p>
+                        <div class="skill-tags">
+                            <span>Jenkins</span>
+                            <span>Pipeline</span>
+                            <span>Webhook</span>
+                            <span>Automation</span>
+                        </div>
+                    </div>
+
+
+                    <div class="skill-card">
+                        <div class="skill-icon">▣</div>
+                        <h3>Containers</h3>
+                        <p>Docker</p>
+                        <div class="skill-tags">
+                            <span>Dockerfile</span>
+                            <span>Images</span>
+                            <span>Containers</span>
+                            <span>Nginx</span>
+                        </div>
+                    </div>
+
+
+                    <div class="skill-card">
+                        <div class="skill-icon">⌘</div>
+                        <h3>Version Control</h3>
+                        <p>Git & GitHub</p>
+                        <div class="skill-tags">
+                            <span>Git</span>
+                            <span>GitHub</span>
+                            <span>Branches</span>
+                            <span>Webhooks</span>
+                        </div>
+                    </div>
+
+
+                    <div class="skill-card">
+                        <div class="skill-icon">$_</div>
+                        <h3>Operating Systems</h3>
+                        <p>Linux</p>
+                        <div class="skill-tags">
+                            <span>Ubuntu</span>
+                            <span>Bash</span>
+                            <span>SSH</span>
+                            <span>Services</span>
+                        </div>
+                    </div>
+
+
+                    <div class="skill-card">
+                        <div class="skill-icon">{ }</div>
+                        <h3>Programming</h3>
+                        <p>Development</p>
+                        <div class="skill-tags">
+                            <span>Python</span>
+                            <span>Java</span>
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= PROJECT ================= -->
+
+        <section id="project" class="section">
+
+            <div class="container">
+
+                <div class="section-heading">
+                    <p class="section-label">03 — FEATURED PROJECT</p>
+                    <h2>Automated CI/CD Web Deployment</h2>
+                </div>
+
+
+                <div class="project-card">
+
+                    <div class="project-top">
+
+                        <div>
+                            <span class="project-badge">
+                                DEVOPS PROJECT
+                            </span>
+
+                            <h3>
+                                GitHub → Jenkins → Docker → AWS EC2
+                            </h3>
+
+                            <p>
+                                An automated CI/CD pipeline that deploys a
+                                Dockerized web application to AWS EC2 whenever
+                                new code is pushed to GitHub.
+                            </p>
+                        </div>
+
+                        <div class="live-status">
+                            <span class="status-dot"></span>
+                            LIVE DEPLOYMENT
+                        </div>
+
+                    </div>
+
+
+                    <!-- Pipeline -->
+
+                    <div class="pipeline">
+
+                        <div class="pipeline-step">
+                            <div class="pipeline-icon">⌘</div>
+                            <strong>GitHub</strong>
+                            <small>Source Code</small>
+                        </div>
+
+                        <div class="pipeline-arrow">→</div>
+
+                        <div class="pipeline-step">
+                            <div class="pipeline-icon">⚡</div>
+                            <strong>Webhook</strong>
+                            <small>Trigger</small>
+                        </div>
+
+                        <div class="pipeline-arrow">→</div>
+
+                        <div class="pipeline-step">
+                            <div class="pipeline-icon">J</div>
+                            <strong>Jenkins</strong>
+                            <small>CI/CD</small>
+                        </div>
+
+                        <div class="pipeline-arrow">→</div>
+
+                        <div class="pipeline-step">
+                            <div class="pipeline-icon">▣</div>
+                            <strong>Docker</strong>
+                            <small>Container</small>
+                        </div>
+
+                        <div class="pipeline-arrow">→</div>
+
+                        <div class="pipeline-step">
+                            <div class="pipeline-icon">☁</div>
+                            <strong>AWS EC2</strong>
+                            <small>Deployment</small>
+                        </div>
+
+                    </div>
+
+
+                    <!-- Project Details -->
+
+                    <div class="project-details">
+
+                        <div>
+                            <span class="detail-label">SOURCE</span>
+                            <strong>GitHub</strong>
+                        </div>
+
+                        <div>
+                            <span class="detail-label">CI/CD</span>
+                            <strong>Jenkins</strong>
+                        </div>
+
+                        <div>
+                            <span class="detail-label">CONTAINER</span>
+                            <strong>Docker + Nginx</strong>
+                        </div>
+
+                        <div>
+                            <span class="detail-label">CLOUD</span>
+                            <strong>AWS EC2</strong>
+                        </div>
+
+                    </div>
+
+
+                    <div class="project-description">
+
+                        <h4>How it works</h4>
+
+                        <ol>
+                            <li>Developer changes the application code.</li>
+                            <li>Code is pushed to GitHub.</li>
+                            <li>GitHub Webhook triggers Jenkins.</li>
+                            <li>Jenkins reads the Jenkinsfile.</li>
+                            <li>Docker image is built automatically.</li>
+                            <li>The old container is replaced with the new version.</li>
+                            <li>The updated application is deployed on AWS EC2.</li>
+                        </ol>
+
+                    </div>
+
+
+                    <div class="project-actions">
+
+                        <a href="https://github.com/vijayalakshmi2802"
+                           target="_blank"
+                           rel="noopener noreferrer"
+                           class="btn btn-primary">
+                            View GitHub Repository
+                            <span>↗</span>
+                        </a>
+
+                        <a href="#architecture"
+                           class="btn btn-secondary">
+                            View Architecture
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= ARCHITECTURE ================= -->
+
+        <section id="architecture" class="section section-dark">
+
+            <div class="container">
+
+                <div class="section-heading">
+                    <p class="section-label">04 — ARCHITECTURE</p>
+                    <h2>Deployment architecture</h2>
+                    <p>
+                        The complete automated deployment flow used in the project.
+                    </p>
+                </div>
+
+
+                <div class="architecture">
+
+                    <div class="architecture-node">
+                        <span class="node-icon">⌘</span>
+                        <strong>Developer</strong>
+                        <small>git push</small>
+                    </div>
+
+                    <div class="architecture-line"></div>
+
+                    <div class="architecture-node">
+                        <span class="node-icon">G</span>
+                        <strong>GitHub</strong>
+                        <small>Repository</small>
+                    </div>
+
+                    <div class="architecture-line"></div>
+
+                    <div class="architecture-node">
+                        <span class="node-icon">⚡</span>
+                        <strong>Webhook</strong>
+                        <small>Push Event</small>
+                    </div>
+
+                    <div class="architecture-line"></div>
+
+                    <div class="architecture-node">
+                        <span class="node-icon">J</span>
+                        <strong>Jenkins</strong>
+                        <small>Pipeline</small>
+                    </div>
+
+                    <div class="architecture-line"></div>
+
+                    <div class="architecture-node">
+                        <span class="node-icon">▣</span>
+                        <strong>Docker</strong>
+                        <small>Build & Run</small>
+                    </div>
+
+                    <div class="architecture-line"></div>
+
+                    <div class="architecture-node">
+                        <span class="node-icon">☁</span>
+                        <strong>AWS EC2</strong>
+                        <small>Elastic IP</small>
+                    </div>
+
+                    <div class="architecture-line"></div>
+
+                    <div class="architecture-node architecture-final">
+                        <span class="node-icon">🌐</span>
+                        <strong>Web Application</strong>
+                        <small>Nginx Container</small>
+                    </div>
+
+                </div>
+
+
+                <div class="ports-card">
+
+                    <h3>Infrastructure & Ports</h3>
+
+                    <div class="ports-grid">
+
+                        <div>
+                            <span>22</span>
+                            <strong>SSH</strong>
+                            <small>Server access</small>
+                        </div>
+
+                        <div>
+                            <span>8080</span>
+                            <strong>Jenkins</strong>
+                            <small>CI/CD server</small>
+                        </div>
+
+                        <div>
+                            <span>8081</span>
+                            <strong>Web Application</strong>
+                            <small>Docker deployment</small>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= CI/CD ================= -->
+
+        <section class="section">
+
+            <div class="container">
+
+                <div class="section-heading">
+                    <p class="section-label">05 — AUTOMATION</p>
+                    <h2>From code push to deployment</h2>
+                </div>
+
+
+                <div class="automation-grid">
+
+                    <div class="automation-card">
+                        <span>01</span>
+                        <h3>Code</h3>
+                        <p>
+                            Application code is maintained in a GitHub repository.
+                        </p>
+                    </div>
+
+                    <div class="automation-card">
+                        <span>02</span>
+                        <h3>Trigger</h3>
+                        <p>
+                            A GitHub push event sends a webhook notification to Jenkins.
+                        </p>
+                    </div>
+
+                    <div class="automation-card">
+                        <span>03</span>
+                        <h3>Build</h3>
+                        <p>
+                            Jenkins executes the pipeline and builds the Docker image.
+                        </p>
+                    </div>
+
+                    <div class="automation-card">
+                        <span>04</span>
+                        <h3>Deploy</h3>
+                        <p>
+                            Docker runs the updated application on AWS EC2.
+                        </p>
+                    </div>
+
+                </div>
+
+
+                <div class="success-box">
+
+                    <div class="success-icon">✓</div>
+
+                    <div>
+                        <strong>Automatic deployment enabled</strong>
+                        <p>
+                            No manual Jenkins "Build Now" action is required
+                            after a GitHub push.
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= PROJECT LEARNING ================= -->
+
+        <section class="section section-dark">
+
+            <div class="container">
+
+                <div class="section-heading">
+                    <p class="section-label">06 — WHAT I IMPLEMENTED</p>
+                    <h2>Practical DevOps experience</h2>
+                </div>
+
+
+                <div class="check-list">
+
+                    <div>✓ AWS EC2 infrastructure</div>
+                    <div>✓ Elastic IP configuration</div>
+                    <div>✓ AWS Security Group configuration</div>
+                    <div>✓ Linux server administration</div>
+                    <div>✓ Git and GitHub workflow</div>
+                    <div>✓ GitHub Webhooks</div>
+                    <div>✓ Jenkins Pipeline</div>
+                    <div>✓ Jenkinsfile</div>
+                    <div>✓ Docker image creation</div>
+                    <div>✓ Docker container deployment</div>
+                    <div>✓ Nginx web server</div>
+                    <div>✓ Automated CI/CD deployment</div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ================= CONTACT ================= -->
+
+        <section id="contact" class="section contact-section">
+
+            <div class="container">
+
+                <div class="contact-card">
+
+                    <p class="section-label">07 — CONTACT</p>
+
+                    <h2>
+                        Let's connect.
+                    </h2>
+
+                    <p>
+                        I am looking for opportunities in Cloud Engineering,
+                        DevOps, Cloud Support and Infrastructure Engineering.
+                    </p>
+
+
+                    <div class="contact-buttons">
+
+                        <a href="https://github.com/vijayalakshmi2802"
+                           target="_blank"
+                           rel="noopener noreferrer"
+                           class="btn btn-primary">
+                            GitHub
+                        </a>
+
+                        <a href="https://www.linkedin.com/in/vijaya-lakshmi-b55639271/"
+                           target="_blank"
+                           rel="noopener noreferrer"
+                           class="btn btn-secondary">
+                            LinkedIn
+                        </a>
+
+                        <!-- Replace with your actual email -->
+                        <a href="mailto:your-email@example.com"
+                           class="btn btn-secondary">
+                            Email
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <!-- ================= FOOTER ================= -->
+
+    <footer>
+
+        <div class="container footer-container">
+
+            <div>
+                <strong>Vijayalakshmi</strong>
+                <span>Cloud & DevOps Engineer</span>
+            </div>
+
+            <p>
+                Built with HTML, CSS & JavaScript • Deployed with Docker, Jenkins & AWS
+            </p>
+
+            <p>
+                © <span id="year"></span> Vijayalakshmi
+            </p>
+
+        </div>
+
+    </footer>
+
 
     <script src="script.js"></script>
+
 </body>
 </html>
